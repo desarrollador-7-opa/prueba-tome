@@ -2,7 +2,7 @@ namespace webapi.Funtions
 {
     public class EntregarCupon 
     {
-        public Cupon EntregaCupon()
+        public Cupon EntregarCupon(CuponId cuponid, int cedula)
         {
         }
     }
