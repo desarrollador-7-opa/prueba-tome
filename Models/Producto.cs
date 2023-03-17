@@ -5,7 +5,7 @@ namespace webapi.Models
 {
     public class Producto
     {
-        [key]
+        [Key]
         public Guid ProductoId { get; set; }
         public string Nombre { get; set; }
         public int Valor { get; set; }

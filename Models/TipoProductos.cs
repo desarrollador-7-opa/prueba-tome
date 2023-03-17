@@ -5,7 +5,7 @@ namespace webapi.Models;
 
 public class TipoProducto
 {
-    [key]
+    [Key]
     public Guid TipoId {get;set;}
     public string Nombre {get;set;}
     public string Descripcion {get;set;}
