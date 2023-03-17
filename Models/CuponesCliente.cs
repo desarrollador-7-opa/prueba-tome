@@ -1,11 +1,12 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace webapi.Models
 {
     public class CuponesCliente
     {
-        [key]
+        [Key]
         [Column("idcuponescliente", TypeName = "bigint")]
         public long CuponClienteId { get; set; }
 

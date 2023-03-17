@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
 namespace webapi.Models
@@ -6,7 +7,7 @@ namespace webapi.Models
 
     public class Cupon
     {
-        [key]
+        [Key]
         [Column("idcupon", TypeName = "bigint")]
         public Guid CuponId { get; set; }
 
@@ -14,10 +15,10 @@ namespace webapi.Models
         public int Valor { get; set; }
 
         [Column("estado", TypeName = "char(1)")]
-        public string Estado { get; set; }
+        public string? Estado { get; set; }
 
         [Column("entregado", TypeName = "char(1)")]
-        public string Entregado { get; set; }
+        public string? Entregado { get; set; }
 
         [Column("fechavence", TypeName = "datetime")]
         public DateTime FechaVence { get; set; }
