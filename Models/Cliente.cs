@@ -14,7 +14,7 @@ namespace webapi.Models
         public string Nombre { get; set; }
 
         [Column("cedula", TypeName = "bigint")]
-         public long Cedula { get; set; }
+        public long Cedula { get; set; }
 
         [Column("telefono", TypeName = "varchar(20)")]
         public string Telefono { get; set; }
