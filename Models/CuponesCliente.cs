@@ -6,7 +6,7 @@ namespace webapi.Models
 {
     public class CuponesCliente
     {
-        [key]
+        [Key]
         [Column("idcuponescliente", TypeName = "bigint")]
         public long CuponClienteId { get; set; }
 
