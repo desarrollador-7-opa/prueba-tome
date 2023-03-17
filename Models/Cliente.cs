@@ -5,7 +5,7 @@ namespace webapi.Models;
 
 public class Cliente
 {
-    [primarykey]
+    [key]
     public Guid ClienteId {get;set;}
     public string Nombre {get;set;}
     public int Cedula {get;set;}

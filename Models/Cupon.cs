@@ -5,7 +5,7 @@ namespace webapi.Models;
 
 public class Cupon
 {
-    [primarykey]
+    [key]
     public Guid CuponId {get;set;}
     public int Valor {get;set;}
     public string Estado {get;set;}
