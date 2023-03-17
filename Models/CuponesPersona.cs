@@ -7,6 +7,6 @@ public class CuponesCliente
 {
     [key]
     public Guid CuponClienteId {get;set;}
-    public Cliente.ClienteId ClienteId {get;set;}
-    public Cupon.CuponId CuponId {get;set;}
+    public int ClienteId {get;set;}
+    public int CuponId {get;set;}
 }
