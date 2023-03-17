@@ -15,10 +15,10 @@ namespace webapi.Models
         public int Valor { get; set; }
 
         [Column("estado", TypeName = "char(1)")]
-        public string Estado { get; set; }
+        public string? Estado { get; set; }
 
         [Column("entregado", TypeName = "char(1)")]
-        public string Entregado { get; set; }
+        public string? Entregado { get; set; }
 
         [Column("fechavence", TypeName = "datetime")]
         public DateTime FechaVence { get; set; }

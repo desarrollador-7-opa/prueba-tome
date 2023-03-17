@@ -12,13 +12,13 @@ namespace webapi.Models
         public long ClienteId { get; set; }
 
         [Column("nombreintegrado", TypeName = "varchar(100)")]
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
 
         [Column("cedula", TypeName = "bigint")]
         public long Cedula { get; set; }
 
         [Column("telefono", TypeName = "varchar(20)")]
-        public string Telefono { get; set; }
+        public string? Telefono { get; set; }
     }
 
 }

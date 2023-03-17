@@ -8,11 +8,11 @@ public class TipoProducto
 {
     [Key]
     [Column("TipoId", TypeName = ("bigint"))]
-    public Guid TipoId {get;set;}
+    public Guid TipoId { get; set; }
 
-    [Column("Nombre",TypeName  = ("Varchar(100"))]
-    public string Nombre {get;set; } = string.Empty;
+    [Column("Nombre", TypeName = ("Varchar(100"))]
+    public string? Nombre { get; set; } = string.Empty;
 
     [Column("Descripcion", TypeName = ("Varchar(100"))]
-    public string Descripcion {get;set; } = string.Empty;
+    public string? Descripcion { get; set; } = string.Empty;
 }
