@@ -10,9 +10,9 @@ namespace webapi
         }
         public int GenerarCompra () 
         {
-            var entregarCupon = EntregarCupon();
-            var Cupon = entregarCupon();
-            return Cupon;
+            var generarCompra = GenerarCompra();
+            var total = generarCompra();
+            return total;
         }
     }
 }
