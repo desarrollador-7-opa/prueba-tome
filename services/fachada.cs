@@ -2,6 +2,7 @@ namespace webapi
 {
     public class Fachada 
     {
+        /*
         public Cupon EntregarCupones () 
         {
             var entregarCupon = EntregarCupon().EntregaCupon(RegistroCupon);
@@ -18,6 +19,7 @@ namespace webapi
         {
             var generarCupones = GenerarCupones();
         }
+        */
     }
 }
 
