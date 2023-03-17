@@ -6,10 +6,17 @@ namespace webapi.Models
 
     public class Cliente
     {
-        [key]
-        public Guid ClienteId { get; set; }
+        [Key]
+        [Column("idcliente",TypeName = "bigint")]
+        public long ClienteId { get; set; }
+
+        [Column("nombreintegrado", TypeName = "varchar(100)")]
         public string Nombre { get; set; }
-        public int Cedula { get; set; }
+
+        [Column("cedula", TypeName = "bigint")]
+         public long Cedula { get; set; }
+
+        [Column("telefono", TypeName = "varchar(20)")]
         public string Telefono { get; set; }
     }
 

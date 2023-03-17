@@ -6,8 +6,13 @@ namespace webapi.Models
     public class CuponesCliente
     {
         [key]
-        public Guid CuponClienteId { get; set; }
-        public int ClienteId { get; set; }
-        public int CuponId { get; set; }
+        [Column("idcuponescliente", TypeName = "bigint")]
+        public long CuponClienteId { get; set; }
+
+        [Column("idcliente", TypeName = "bigint")]
+        public long ClienteId { get; set; }
+
+        [Column("idcupon", TypeName = "bigint")]
+        public long CuponId { get; set; }
     }
 }
