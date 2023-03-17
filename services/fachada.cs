@@ -1,25 +1,17 @@
+using webapi.Funtions;
 namespace webapi
 {
     public class Fachada 
     {
-        /*
-        public Cupon EntregarCupones () 
+        public string EntregarCupones () 
         {
-            var entregarCupon = EntregarCupon().EntregaCupon(RegistroCupon);
-            var Cupon = entregarCupon;
-            return Cupon;
+            var entregarCupon = new EntregarCupon();
+            return entregarCupon.EntregarCupones();
         }
-        public int GenerarCompras () 
+        public string GenerarCompra () 
         {
-            var generarCompra = GenerarCompra();
-            var total = generarCompra();
-            return total;
+            var generarCompra = new GenerarCompra();
+            return generarCompra.GenerarCompras();
         }
-        public void GenerarTodosLosCupones ()
-        {
-            var generarCupones = GenerarCupones();
-        }
-        */
     }
 }
-
