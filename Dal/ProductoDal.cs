@@ -1,11 +1,12 @@
+using webapi.Models;
+
 namespace webapi.Dal 
 {
-    /*
     public class ProductoDal
     {
         public Producto Create(Producto producto)
         {
-            return Producto;
+            return producto;
         }
         public Producto Read(int id)
         {
@@ -13,12 +14,11 @@ namespace webapi.Dal
         }
         public Producto Update(Producto producto, int id)
         {
-            return Producto;
+            return producto;
         }
-        public Producto Delete(int id)
+        public int Delete(int id)
         {
             return id;
         }
     }
-    */
 }

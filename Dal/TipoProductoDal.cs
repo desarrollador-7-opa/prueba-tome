@@ -1,24 +1,24 @@
+using webapi.Models;
+
 namespace webapi.Dal 
 {
-    /*
     public class TipoProductoDal
     {
-        public Categoria Create(Categoria categoria)
+        public TipoProducto Create(TipoProducto categoria)
         {
-            return Categoria;
+            return categoria;
         }
-        public Categoria Read(int id)
+        public TipoProducto Read(int id)
         {
-            return new Categoria();
+            return new TipoProducto();
         }
-        public Categoria Update(Categoria categoria, int id)
+        public TipoProducto Update(TipoProducto categoria, int id)
         {
-            return Categoria;
+            return categoria;
         }
-        public Categoria Delete(int id)
+        public int Delete(int id)
         {
             return id;
         }
     }
-    */
 }

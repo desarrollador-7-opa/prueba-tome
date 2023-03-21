@@ -1,6 +1,7 @@
+using webapi.Models;
+
 namespace webapi.Dal 
 {
-    /*
     public class ClienteDal
     {
         public Cliente Create(Cliente cliente)
@@ -15,10 +16,9 @@ namespace webapi.Dal
         {
             return cliente;
         }
-        public Cliente Delete(int id)
+        public int Delete(int id)
         {
             return id;
         }
     }
-    */
 }

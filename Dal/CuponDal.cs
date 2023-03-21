@@ -1,11 +1,12 @@
+using webapi.Models;
+
 namespace webapi.Dal 
 {
-    /*
     public class CuponDal
     {
         public Cupon Create(Cupon cupon)
         {
-            return Cupon;
+            return cupon;
         }
         public Cupon Read(int id)
         {
@@ -13,12 +14,11 @@ namespace webapi.Dal
         }
         public Cupon Update(Cupon cupon, int id)
         {
-            return Cupon;
+            return cupon;
         }
-        public Cupon Delete(int id)
+        public int Delete(int id)
         {
             return id;
         }
     }
-    */
 }
