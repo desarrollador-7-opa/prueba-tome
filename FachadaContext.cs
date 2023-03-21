@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using prueba_tome.Models;
 
-namespace webapi;
+namespace prueba_tome;
 
 public class FachadaContext: DbContext
 {
