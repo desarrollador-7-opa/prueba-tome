@@ -1,5 +1,6 @@
 namespace webapi.Dal 
 {
+    /*
     public class ProductoDal
     {
         public Producto Create(Producto producto)
@@ -19,4 +20,5 @@ namespace webapi.Dal
             return id;
         }
     }
+    */
 }

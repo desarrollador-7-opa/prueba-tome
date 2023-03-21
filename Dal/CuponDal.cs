@@ -1,5 +1,6 @@
 namespace webapi.Dal 
 {
+    /*
     public class CuponDal
     {
         public Cupon Create(Cupon cupon)
@@ -19,4 +20,5 @@ namespace webapi.Dal
             return id;
         }
     }
+    */
 }
