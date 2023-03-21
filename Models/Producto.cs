@@ -5,7 +5,6 @@ using System.Xml.Schema;
 
 namespace webapi.Models
 {
-
     public class Producto
     {
         [Key]

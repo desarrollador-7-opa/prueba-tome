@@ -4,7 +4,6 @@ using System.Text.Json.Serialization;
 
 namespace webapi.Models
 {
-
     public class Cupon
     {
         [Key]

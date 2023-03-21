@@ -4,7 +4,6 @@ using System.Text.Json.Serialization;
 
 namespace webapi.Models
 {
-
     public class Cliente
     {
         [Key]
@@ -20,5 +19,4 @@ namespace webapi.Models
         [Column("telefono", TypeName = "varchar(20)")]
         public string? Telefono { get; set; }
     }
-
 }
