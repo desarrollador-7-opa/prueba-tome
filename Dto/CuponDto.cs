@@ -7,5 +7,4 @@ namespace webapi.Dal
         public string Entregado { get; set; }
         public DateTime FechaVence { get; set; }
     }
-
 }
