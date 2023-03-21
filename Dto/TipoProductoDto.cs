@@ -1,4 +1,4 @@
-namespace webapi.Dal
+namespace prueba_tome.Dal
 {
     public class TipoProductoDto
     {

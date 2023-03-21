@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 using System.Xml.Schema;
 
-namespace webapi.Models
+namespace prueba_tome.Models
 {
     public class Producto
     {

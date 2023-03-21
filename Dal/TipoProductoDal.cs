@@ -1,6 +1,6 @@
-using webapi.Models;
+using prueba_tome.Models;
 
-namespace webapi.Dal 
+namespace prueba_tome.Dal 
 {
     public class TipoProductoDal
     {

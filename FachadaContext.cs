@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using webapi.Models;
+using prueba_tome.Models;
 
 namespace webapi;
 
