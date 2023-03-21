@@ -8,7 +8,7 @@ public class TipoProducto
 {
     [Key]
     [Column("TipoId", TypeName = ("bigint"))]
-    public Guid TipoId { get; set; }
+    public long TipoId { get; set; }
 
     [Column("Nombre", TypeName = ("Varchar(100"))]
     public string? Nombre { get; set; } = string.Empty;

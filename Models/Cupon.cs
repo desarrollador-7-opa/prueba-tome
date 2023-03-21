@@ -8,7 +8,7 @@ namespace prueba_tome.Models
     {
         [Key]
         [Column("idcupon", TypeName = "bigint")]
-        public Guid CuponId { get; set; }
+        public long CuponId { get; set; }
 
         [Column("valor", TypeName = "numeric(18,0)")]
         public int Valor { get; set; }
