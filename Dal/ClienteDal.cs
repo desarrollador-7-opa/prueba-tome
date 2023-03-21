@@ -2,9 +2,21 @@ namespace webapi.Dal
 {
     public class ClienteDal
     {
-        public ClienteDal Create(ClienteDal clienteDal)
+        public Cliente Create(Cliente cliente)
         {
-            return clienteDal;
+            return cliente;
+        }
+        public Cliente Read(int id)
+        {
+            return new Cliente();
+        }
+        public Cliente Update(Cliente cliente, int id)
+        {
+            return cliente;
+        }
+        public Cliente Delete(int id)
+        {
+            return id;
         }
     }
 }
