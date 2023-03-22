@@ -348,5 +348,5 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
-
+# Se añade la carpeta obj para que no incluya en cambios de BUILD al generar la carpeta DEBUG
 /obj
