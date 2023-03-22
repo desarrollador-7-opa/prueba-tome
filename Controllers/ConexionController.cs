@@ -1,6 +1,4 @@
-using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using prueba_tome;
 
 namespace prueba_tome.Controllers;
 
@@ -14,5 +12,4 @@ public class ConexionController : ControllerBase
         dbContext.Database.EnsureCreated();
         Console.WriteLine(Results.Ok("Base de datos Conectada"));
     }
-
 }
