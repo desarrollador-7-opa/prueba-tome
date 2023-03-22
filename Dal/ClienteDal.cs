@@ -1,10 +1,24 @@
-namespace webapi.Dal 
+using prueba_tome.Models;
+
+namespace prueba_tome.Dal 
 {
     public class ClienteDal
     {
-        public ClienteDal Create(ClienteDal clienteDal)
+        public Cliente Create(Cliente cliente)
         {
-            return clienteDal;
+            return cliente;
+        }
+        public Cliente Read(int id)
+        {
+            return new Cliente();
+        }
+        public Cliente Update(Cliente cliente, int id)
+        {
+            return cliente;
+        }
+        public int Delete(int id)
+        {
+            return id;
         }
     }
 }

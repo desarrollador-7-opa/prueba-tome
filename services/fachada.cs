@@ -1,5 +1,5 @@
-using webapi.Funtions;
-namespace webapi
+using prueba_tome.Funtions;
+namespace prueba_tome
 {
     public class Fachada
     {

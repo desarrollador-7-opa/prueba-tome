@@ -2,9 +2,8 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace webapi.Models
+namespace prueba_tome.Models
 {
-
     public class Cliente
     {
         [Key]
@@ -20,5 +19,4 @@ namespace webapi.Models
         [Column("telefono", TypeName = "varchar(20)")]
         public string? Telefono { get; set; }
     }
-
 }
