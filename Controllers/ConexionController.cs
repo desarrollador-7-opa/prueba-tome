@@ -7,9 +7,9 @@ namespace prueba_tome.Controllers;
 public class ConexionController : ControllerBase
 {
     [HttpGet(Name = "Conexion")]
-    public void Get([FromServices] FachadaContext dbContext)
+    public IResult Get([FromServices] FachadaContext dbContext)
     {
         dbContext.Database.EnsureCreated();
-        Console.WriteLine(Results.Ok("Base de datos Conectada"));
+        return Results.Ok("DB conectada");
     }
 }
