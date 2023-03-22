@@ -7,13 +7,20 @@ namespace prueba_tome.Controllers
     [Route("[controller]")]
     public class ClienteController
     {
-        [HttpGet(Name = "Cliente")]
-        public IResult Get([FromServices] FachadaContext dbContext)
-        { return Results.Ok(dbContext.Clientes); }
-
-        //public IResult GetById([FromServices] FachadaContext dbContext, long id)
-        //{ return Results.Ok(dbContext.Clientes.Where(p => p.ClienteId == id)); }
-
+        [HttpGet(Name = "Cliente/{id?}")]
+        public IResult Get([FromServices] FachadaContext dbContext,  [FromRoute] long id)
+        {
+            // REVISAR EL FROMROUTE Y EL FROMBODY
+            Console.WriteLine($"ID: {id}");
+            if (id != 0)
+            {
+                return Results.Ok(dbContext.Clientes.Where(p => p.ClienteId == id));
+            }
+            else
+            {
+                return Results.Ok(dbContext.Clientes);
+            }
+        }
         [HttpPost(Name = "Cliente")]
         public IResult post([FromServices] FachadaContext dbContext, [FromBody] Cliente cliente)
         {
@@ -23,9 +30,9 @@ namespace prueba_tome.Controllers
         }
 
         [HttpPut(Name = "Cliente")]
-        public string put(long id, string? nombre, long cedula, string? telefono)
+        public IResult put([FromServices] FachadaContext dbContext)
         {
-            return "NicePUT";
+            return Results.Ok("Cliente Modificado");
         }
 
         [HttpDelete(Name = "Cliente")]
