@@ -9,7 +9,7 @@ namespace prueba_tome.Models
     {
         [Key]
         [Column("ProductoId", TypeName = ("bigint"))]
-        public Guid ProductoId { get; set; }
+        public long ProductoId { get; set; }
 
         [Column("Nombre", TypeName = ("varchar(100)"))]
         public string? Nombre { get; set; } = string.Empty;
