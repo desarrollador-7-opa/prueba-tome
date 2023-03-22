@@ -5,7 +5,7 @@ namespace prueba_tome;
 
 public class FachadaContext: DbContext
 {
-    public DbSet<Cliente> Categorias {get;set;}
+    public DbSet<Cliente> Clientes {get;set;}
     public DbSet<Cupon> Cupones {get;set;}
     public DbSet<CuponesCliente> CuponesClientes {get;set;}
     public DbSet<Producto> Productos {get;set;}
