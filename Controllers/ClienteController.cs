@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using prueba_tome.Models;
 
 namespace prueba_tome.Controllers
 {
@@ -7,17 +8,18 @@ namespace prueba_tome.Controllers
     public class ClienteController
     {
         [HttpGet(Name = "Cliente")]
-        public IResult Get([FromServices] FachadaContext dbContext) 
-            { return Results.Ok(dbContext.Clientes); }
-        
-        [HttpGet(Name = "Cliente{ID:int}")]
-        public IResult GetById<ID>([FromServices] FachadaContext dbContext) 
-            { return Results.Ok(dbContext.Clientes); }
+        public IResult Get([FromServices] FachadaContext dbContext)
+        { return Results.Ok(dbContext.Clientes); }
+
+        //public IResult GetById([FromServices] FachadaContext dbContext, long id)
+        //{ return Results.Ok(dbContext.Clientes.Where(p => p.ClienteId == id)); }
 
         [HttpPost(Name = "Cliente")]
-        public string post(long id, string? nombre, long cedula, string? telefono)
+        public IResult post([FromServices] FachadaContext dbContext, [FromBody] Cliente cliente)
         {
-            return "NicePOST";
+            dbContext.Add(cliente);
+            dbContext.SaveChanges();
+            return Results.Ok("Cliente Almacenado");
         }
 
         [HttpPut(Name = "Cliente")]
