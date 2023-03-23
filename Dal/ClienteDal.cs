@@ -4,14 +4,17 @@ namespace prueba_tome.Dal
 {
     public class ClienteDal
     {
-        public Cliente Create(Cliente cliente)
+//********************************************************
+        public IResult Create(FachadaContext dbContext)
         {
-            return cliente;
+            return Results.Ok(dbContext.Clientes);
         }
-        public Cliente Read(int id)
+        public IResult Read(FachadaContext dbContext,long id)
         {
-            return new Cliente();
+            return Results.Ok(dbContext.Clientes);
         }
+// Falta el where en el read
+//********************************************************
         public Cliente Update(Cliente cliente, int id)
         {
             return cliente;
