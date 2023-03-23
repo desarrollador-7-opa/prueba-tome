@@ -1,6 +1,6 @@
-namespace prueba_tome.Dal
+namespace prueba_tome.Dto
 {
-    public class CuponesClienteDto
+    public class CuponesCliente
     {
         public long ClienteId { get; set; }
         public long CuponId { get; set; }

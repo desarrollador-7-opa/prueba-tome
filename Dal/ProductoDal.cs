@@ -1,4 +1,4 @@
-using prueba_tome.Models;
+using prueba_tome.Dto;
 
 namespace prueba_tome.Dal 
 {

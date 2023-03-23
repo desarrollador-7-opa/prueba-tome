@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using prueba_tome.Models;
+using prueba_tome.Dal;
 
 namespace prueba_tome.Controllers
 {
@@ -7,11 +7,9 @@ namespace prueba_tome.Controllers
     [Route("[controller]")]
     public class ClienteController
     {
-        [HttpGet(Name = "Cliente/{id?}")]
+        [HttpGet(Name = "Cliente/{id}")]
         public IResult Get([FromServices] FachadaContext dbContext,  [FromRoute] long id)
         {
-            // REVISAR EL FROMROUTE Y EL FROMBODY
-            Console.WriteLine($"ID: {id}");
             if (id != 0)
             {
                 return Results.Ok(dbContext.Clientes.Where(p => p.ClienteId == id));

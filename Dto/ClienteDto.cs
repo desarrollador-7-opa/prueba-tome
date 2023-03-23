@@ -1,8 +1,8 @@
-namespace prueba_tome.Dal
+namespace prueba_tome.Dto
 {
-    public class Clientedto
+    public class Cliente
     {
-        public long? Nombre { get; set; }
+        public long Nombre { get; set; }
         public long Cedula { get; set; }
         public string? Telefono { get; set; }
     }

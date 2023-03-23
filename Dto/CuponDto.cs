@@ -1,6 +1,6 @@
-namespace prueba_tome.Dal
+namespace prueba_tome.Dto
 {
-    public class CuponDto
+    public class Cupon
     {
         public int Valor { get; set; }
         public string? Estado { get; set; }
