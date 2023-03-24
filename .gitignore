@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 # Se añade la carpeta obj para que no incluya en cambios de BUILD al generar la carpeta DEBUG
 /obj
+# Se añade la carpeta bin para que no incluya en cambios .
+/bin
